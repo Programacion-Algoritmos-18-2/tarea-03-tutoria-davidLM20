@@ -1,6 +1,6 @@
 #se crea las clasas docente
 class Docente:
-
+	#metodo para la creacion de parametros objetos
 	def __init__(self,n,a):
 		self.nombres = n
 		self.ciudad = a
@@ -22,8 +22,10 @@ class Docente:
 	def presentar_datos(self):
 		cadena = "%s\n\t%s" % (self.obtener_nombres(), self.obtener_ciudad())
 		return cadena
+
 #se crea clase estudiante
 class Estudiante:
+	#metodo para la creacion de parametros objetos
 	def __init__(self,n,lista_docentes):
 		self.nombres = n
 		self.docentes = lista_docentes
